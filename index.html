@@ -17,7 +17,7 @@
 <body class="bg-gray-100 text-gray-900 font-sans">
 
   <!-- HEADER / NAV -->
-  <header class="border-b border-gray-200 bg-white pt-10">
+  <header class="border-b border-gray-200 bg-white">
     <div class="max-w-6xl mx-auto flex items-center justify-between px-4 md:px-6 h-16">
       <!-- Logo -->
       <a href="#" class="flex items-center gap-2">
@@ -97,20 +97,46 @@
         <!-- Right: image placeholder -->
         <div class="md:w-1/2">
           <div class="h-56 sm:h-64 md:h-80 w-full bg-gray-200 border border-gray-300 flex items-center justify-center text-gray-500 text-sm">
-            Image / Video Placeholder
+            <img class=" rounded-xl" src="./imgs/DC/PeopleShoresTeam.webp" alt="PeopleShores Team">
           </div>
         </div>
       </div>
     </section>
 
     <!-- TECH OFFERINGS -->
+
+   
     <section class="bg-sectionOne border-y border-gray-200 ">
       <div class="max-w-6xl mx-auto px-4 md:px-6 py-8">
-        <h2 class="text-center text-xs md:text-lg font-semibold tracking-wide uppercase text-textWhite">
+        <h2 class="text-center text-lg md:text-lg font-semibold tracking-wide uppercase text-textWhite">
           Tech Offerings
         </h2>
+        <div class="text-textWhite pt-10 pb-5 flex gap-8 w-[200%] animate-[infinite-scroll_80s_linear_infinite] text-md sm:text-xl">
 
-        <div class="mt-6 flex flex-wrap justify-center gap-3 text-xs sm:text-sm">
+          <!-- SET 1 -->
+          <div class="flex gap-20 shrink-0">
+            <div class="card">ServiceNow</div>
+            <div class="card">SAP / ERP</div>
+            <div class="card">Salesforce</div>
+            <div class="card">Data Analytics</div>
+            <div class="card">QA / Automation Testing</div>
+            <div class="card">AI & Emerging Tech</div>
+            <div class="card">Cloud Services (AWS, Azure, GCP)</div>
+          </div>
+  
+          <!-- SET 2 (duplicate for smooth looping) -->
+          <div class="flex gap-20 shrink-0">
+            <div class="card">ServiceNow</div>
+            <div class="card">SAP / ERP</div>
+            <div class="card">Salesforce</div>
+            <div class="card">Data Analytics</div>
+            <div class="card">QA / Automation Testing</div>
+            <div class="card">AI & Emerging Tech</div>
+            <div class="card">Cloud Services (AWS, Azure, GCP)</div>
+          </div>
+  
+        </div>
+        <!-- <div class="mt-6 flex flex-wrap justify-center gap-3 text-xs sm:text-sm">
           <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">ServiceNow</span>
           <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">SAP / ERP</span>
           <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">Salesforce</span>
@@ -119,7 +145,7 @@
           <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">QA / Automation Testing</span>
           <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">AI & Emerging Tech</span>
           <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">Cloud Services (AWS, Azure, GCP)</span>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -182,6 +208,8 @@
             </ul>
           </div>
         </div>
+
+      </div>
       </div>
     </section>
 
@@ -196,8 +224,8 @@
         <!-- Technical + Professional cards -->
         <div class="mt-6 grid gap-6 md:grid-cols-2">
           <article class="bg-psRed text-textWhite border border-gray-200 rounded-lg p-5 shadow-sm">
-            <h3 class="font-semibold text-sm text-center underline">Technical Training</h3>
-            <ul class="mt-3 list-disc list-inside text-sm t space-y-3 list-none pl-10">
+            <h3 class="font-semibold text-md text-center underline">Technical Training</h3>
+            <ul class="mt-3 list-disc list-inside text-sm t space-y-6 list-none pl-10">
               <li>CySA+: Threat detection, incident response, log analysis.</li>
               <li>Splunk: Data monitoring, dashboards, alerts.</li>
               <li>Data Analytics: SQL for visualization.</li>
@@ -206,33 +234,51 @@
           </article>
 
           <article class="bg-psRed border border-gray-200 text-textWhite rounded-lg p-5 shadow-sm">
-            <h3 class="font-semibold text-sm text-center underline">Professional Development</h3>
-            <ul class="mt-3 list-disc list-inside text-sm  space-y-3 list-none pl-20">
-              <li>Agile and Scrum Methodologies</li>
-              <li>TEffective communication and teamwork</li>
-              <li>Leadership and time management</li>
+            <h3 class="font-semibold text-md text-center underline">Professional Development</h3>
+            <ul class="mt-3 list-disc list-inside text-sm t space-y-6 list-none pl-10 ml-4">
+              <li>Agile and Scrum Methodologies.</li>
+              <li>TEffective communication and teamwork.</li>
+              <li>Leadership and time management.</li>
             </ul>
           </article>
         </div>
         
-        <!-- Day to Day Programming -->
-        <div class="mt-8 flex justify-center flex-col items-center">
-          <h3 class="font-semibold text-sm">Day-to-Day Programming</h3>
-          <p class="mt-3 text-sm text-gray-700 mb-4">  Apprentices at the DC Center are paid employees from the start of the program. Their standard working hours are 8:30 AM to 5:30 PM, mirroring a professional environment to prepare them for their consulting roles.</p>
-          <ul class="mt-3 list-disc list-inside text-sm text-gray-700 space-y-1">
-            <li>Instructor-led technical sessions or hands-on coding exercises.</li>
-            <li>Project-based learning, including pair programming and peer reviews.</li>
-            <li>Focused self-study for skill development.</li>
-            <li>Completing labs and assignments that provide hands-on training and reinforce technical concepts.</li>
-            <li>Lead check-ins to address challenges and progress tracking</li>
-          </ul>
-        </div>
+      <!-- Day-to-Day Programming -->
+<div class="mt-8 flex flex-col sm:flex-row items-center sm:items-start gap-8">
+
+  <!-- Text Section -->
+  <div class="w-full sm:w-1/2">
+    <h3 class="font-semibold text-md text-center">Day-to-Day Programming</h3>
+
+    <p class="mt-3 text-sm text-gray-700 mb-4">
+      Apprentices at the DC Center are paid employees from the start of the
+      program. Their standard working hours are 8:30 AM to 5:30 PM, mirroring
+      a professional environment to prepare them for their consulting roles.
+    </p>
+
+    <ul class="mt-3 list-disc list-inside text-sm text-gray-700 space-y-6 list-none p-2">
+      <li>Instructor-led technical sessions or hands-on coding exercises.</li>
+      <li>Project-based learning, including pair programming and peer reviews.</li>
+      <li>Focused self-study for skill development.</li>
+      <li>Completing labs and assignments to reinforce technical concepts.</li>
+      <li>Lead check-ins to address challenges and track progress.</li>
+    </ul>
+  </div>
+
+  <!-- Image Section -->
+  <div class="w-full sm:w-1/2 flex justify-center">
+    <img class="w-full rounded-xl object-cover" src="./imgs/DC/PeopleShoresClass.webp" alt="">
+
+  </div>
+
+</div>
+
 
         <!-- Assessments -->
         <div class="mt-8 flex justify-center flex-col items-center">
           <article class="bg-white border border-gray-200 rounded-sm p-5 shadow-sm">
-            <h3 class="font-semibold text-sm text-center">Assessments</h3>
-            <ul class="mt-3 list-disc list-inside text-sm text-gray-700 space-y-1 pl-10 pr-10">
+            <h3 class="font-semibold text-lg text-center">Assessments</h3>
+            <ul class="mt-3 list-disc list-inside text-sm text-gray-700 space-y-6 pl-10 pr-10 list-none p-2">
               <li>Knowledge-Based Assessments (KBA): Closed-book, close-ended multiple-choice quizzes administered at the end of each section to evaluate theoretical understanding.</li>
               <li>Skill-Based Assessments (SBA): Project-based tasks conducted after most sections to assess the application of technical skills in practical, real-world scenarios.</li>
             </ul>
