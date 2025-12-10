@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PeopleShores DC</title>
+
+  <link href="./src/output.css" rel="stylesheet">
+
+
+
+    <!-- Google Font (clean corporate look) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+  <!-- HEADER / NAV -->
+  <header class="border-b border-gray-200 bg-white pt-10">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 md:px-6 h-16">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2">
+        <img src="./imgs/ppl_logo.png" alt="PeopleShores logo" class="h-8 w-auto">
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:block" aria-label="Main navigation">
+        <ul class="flex items-center gap-6 text-xs lg:text-sm font-semibold text-gray-700">
+          <li><a href="#" class="hover:text-psRed">Who We Are</a></li>
+          <li><a href="#" class="hover:text-psRed">What We Do</a></li>
+          <li><a href="#" class="hover:text-psRed">Why Us</a></li>
+          <li><a href="#" class="hover:text-psRed">Our Impact</a></li>
+          <li><a href="#" class="hover:text-psRed">Our Locations</a></li>
+          <li><a href="#" class="hover:text-psRed">Stories</a></li>
+          <li><a href="#" class="hover:text-psRed">Careers</a></li>
+          <li><a href="#" class="hover:text-psRed">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile hamburger -->
+      <button
+        id="mobile-menu-button"
+        class="md:hidden inline-flex items-center justify-center rounded border border-gray-300 p-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-psRed"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <!-- simple hamburger icon -->
+        <svg id="icon-open" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="icon-close" class="h-5 w-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile dropdown nav -->
+    <nav id="mobile-menu" class="md:hidden hidden border-t border-gray-200 bg-white" aria-label="Mobile main navigation">
+      <ul class="flex flex-col px-4 py-3 text-sm font-semibold text-gray-700 space-y-2 text-center">
+        <li><a href="#" class="block py-1 hover:text-psRed">Who We Are</a></li>
+        <li><a href="#" class="block py-1 hover:text-psRed">What We Do</a></li>
+        <li><a href="#" class="block py-1 hover:text-psRed">Why Us</a></li>
+        <li><a href="#" class="block py-1 hover:text-psRed">Our Impact</a></li>
+        <li><a href="#" class="block py-1 hover:text-psRed">Our Locations</a></li>
+        <li><a href="#" class="block py-1 hover:text-psRed">Stories</a></li>
+        <li><a href="#" class="block py-1 hover:text-psRed">Careers</a></li>
+        <li><a href="#" class="block py-1 hover:text-psRed">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="bg-white ">
+      <div class="max-w-6xl mx-auto px-4 md:px-6 py-10 md:py-16 flex flex-col md:flex-row gap-10">
+        <!-- Left: text -->
+        <div class="md:w-1/2">
+          <p class="text-[11px] font-semibold tracking-[0.2em] text-gray-500 uppercase">
+            PeopleShores Apprenticeship Program
+          </p>
+          <h1 class="mt-3 text-3xl md:text-4xl font-bold leading-tight text-gray-900">
+            PeopleShores Apprenticeship Program
+          </h1>
+          <p class="mt-4 text-sm md:text-base text-gray-700 max-w-md">
+            Empowering apprentices with industry-aligned training and real-world consulting.
+          </p>
+          <button
+            class="mt-6 inline-flex items-center justify-center rounded-sm bg-psRed px-5 py-2 text-sm font-semibold text-white hover:bg-psRedDark">
+            <a href="http://">Learn More</a> 
+          </button>
+        </div>
+
+        <!-- Right: image placeholder -->
+        <div class="md:w-1/2">
+          <div class="h-56 sm:h-64 md:h-80 w-full bg-gray-200 border border-gray-300 flex items-center justify-center text-gray-500 text-sm">
+            Image / Video Placeholder
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH OFFERINGS -->
+    <section class="bg-psGray border-y border-gray-200 ">
+      <div class="max-w-6xl mx-auto px-4 md:px-6 py-8">
+        <h2 class="text-center text-xs md:text-sm font-semibold tracking-wide uppercase text-gray-700">
+          Tech Offerings
+        </h2>
+
+        <div class="mt-6 flex flex-wrap justify-center gap-3 text-xs sm:text-sm">
+          <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">ServiceNow</span>
+          <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">SAP / ERP</span>
+          <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">Salesforce</span>
+          <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">Data Analytics</span>
+          <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">Cybersecurity</span>
+          <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">QA / Automation Testing</span>
+          <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">AI & Emerging Tech</span>
+          <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">Cloud Services (AWS, Azure, GCP)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="bg-white pt-40">
+      <div class="max-w-4xl mx-auto px-4 md:px-6 py-10">
+        <h2 class="text-lg font-semibold">Overview</h2>
+        <p class="mt-3 text-sm md:text-base text-gray-700 leading-relaxed">
+          The DC Center is a joint initiative between Accenture and PeopleShores, designed to develop underrepresented talent for roles in the tech industry. Through an 12-month program, the center combines 4 months of intensive technical training with 8 months of real-world consultancy experience. In partnership with Per Scholas, a nationally recognized training organization, the DC Center leverages their instructors and curriculum, which has been vetted and signed off by Accenture to align with industry standards and project needs.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROGRAM STRUCTURE -->
+    <section class="bg-psGray border-y border-gray-200">
+      <div class="max-w-5xl mx-auto px-4 md:px-6 py-10">
+        <h2 class="text-lg font-semibold text-center">Program Structure</h2>
+        <p class="mt-2 text-sm text-gray-700 text-center max-w-2xl mx-auto">
+          The program is structured in two distinct phases.
+        </p>
+
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <!-- Phase 1 -->
+          <article class="bg-white border border-gray-200 rounded-sm p-5 shadow-sm">
+            <h3 class="font-semibold text-sm text-center">
+              1. Technical Training (4 Months)
+            </h3>
+            <p class="mt-3 text-sm text-gray-700">
+              Apprentices complete a curriculum developed by Per Scholas and adapted with Accenture’s input, ensuring alignment with the skills and competencies required for their future roles.
+            </p>
+          </article>
+
+          <!-- Phase 2 -->
+          <article class="bg-white border border-gray-200 rounded-sm p-5 shadow-sm">
+            <h3 class="font-semibold text-sm text-center">
+              2. Consultancy Phase (8 Months)
+            </h3>
+            <p class="mt-3 text-sm text-gray-700">
+              Following their training, apprentices transition to consulting roles on Accenture teams. This phase focuses on
+              applying learned skills in real-world scenarios with the goal of securing full-time offers by the end of the program.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COHORT DETAILS -->
+    <section class="bg-white">
+      <div class="max-w-4xl mx-auto px-4 md:px-6 py-10">
+        <h2 class="text-lg font-semibold">Cohort Details</h2>
+
+        <div class="mt-4 grid gap-4 text-sm flex justify-center">
+          <div>
+            <h3 class="font-semibold text-lg text-center">Cohort 1</h3>
+            <ul class="mt-2 space-y-1 text-gray-700 text-center">
+              <li><span class="font-semibold">Start Date:</span> April 7, 2024</li>
+              <li><span class="font-semibold">Training Period:</span> April 7 2024 – August 2024</li>
+              <li><span class="font-semibold">Consultancy Phase:</span> August 7 2024 – December 2026</li>
+              <li><span class="font-semibold">Candidates:</span> 50 apprentices</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRICULUM OVERVIEW -->
+    <section class="bg-psGray border-y border-gray-200">
+      <div class="max-w-5xl mx-auto px-4 md:px-6 py-10">
+        <h2 class="text-lg font-semibold">Curriculum Overview</h2>
+        <p class="mt-2 text-sm text-gray-700">
+          The DC Center’s curriculum, delivered by Per Scholas instructors, has been carefully vetted and approved by Accenture to meet both technical and professional development needs. Key elements include:
+        </p>
+
+        <!-- Technical + Professional cards -->
+        <div class="mt-6 grid gap-6 md:grid-cols-2">
+          <article class="bg-white border border-gray-200 rounded-sm p-5 shadow-sm">
+            <h3 class="font-semibold text-sm">Technical Training</h3>
+            <ul class="mt-3 list-disc list-inside text-sm text-gray-700 space-y-1">
+              <li>CySA+: Threat detection, incident response, log analysis.</li>
+              <li>Splunk: Data monitoring, dashboards, alerts.</li>
+              <li>Data Analytics: SQL for visualization.</li>
+              <li>Emerging Tech: AI tools for software development.</li>
+            </ul>
+          </article>
+
+          <article class="bg-white border border-gray-200 rounded-sm p-5 shadow-sm">
+            <h3 class="font-semibold text-sm">Professional Development</h3>
+            <ul class="mt-3 list-disc list-inside text-sm text-gray-700 space-y-1">
+              <li>Agile and Scrum Methodologies</li>
+              <li>TEffective communication and teamwork</li>
+              <li>Leadership and time management</li>
+            </ul>
+          </article>
+        </div>
+        
+        <!-- Day to Day Programming -->
+        <div class="mt-8 flex justify-center flex-col items-center ">
+          <h3 class="font-semibold text-sm">Day-to-Day Programming</h3>
+          <p class="mt-3 text-sm text-gray-700 mb-4">  Apprentices at the DC Center are paid employees from the start of the program. Their standard working hours are 8:30 AM to 5:30 PM, mirroring a professional environment to prepare them for their consulting roles.</p>
+          <ul class="mt-3 list-disc list-inside text-sm text-gray-700 space-y-1 ">
+            <li>Instructor-led technical sessions or hands-on coding exercises.</li>
+            <li>Project-based learning, including pair programming and peer reviews.</li>
+            <li>Focused self-study for skill development.</li>
+            <li>Completing labs and assignments that provide hands-on training and reinforce technical concepts.</li>
+            <li>Lead check-ins to address challenges and progress tracking</li>
+          </ul>
+        </div>
+
+        <!-- Assessments -->
+        <div class="mt-8 flex justify-center flex-col items-center">
+          <article class="bg-white border border-gray-200 rounded-sm p-5 shadow-sm">
+            <h3 class="font-semibold text-sm text-center">Assessments</h3>
+            <ul class="mt-3 list-disc list-inside text-sm text-gray-700 space-y-1 text-center">
+              <li>Knowledge-Based Assessments (KBA): Closed-book, close-ended multiple-choice quizzes administered at the end of each section to evaluate theoretical understanding.</li>
+              <li>Skill-Based Assessments (SBA): Project-based tasks conducted after most sections to assess the application of technical skills in practical, real-world scenarios.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="bg-psRed ">
+      <div class="max-w-5xl mx-auto px-4 md:px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 pt-10">
+        <p class="text-white text-sm md:text-base font-semibold text-center md:text-left">
+          Unlock Your Business Potential. Connect with PeopleShores Today!
+        </p>
+        <button
+          class="inline-flex items-center justify-center rounded-sm bg-white px-5 py-2 text-xs md:text-sm font-semibold text-psRed hover:bg-gray-100">
+          GET YOUR FREE QUOTE TODAY!
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+<footer class="bg-psNavy text-gray-300 text-xs">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 py-10 space-y-10">
+
+    <!-- Top Row -->
+    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+
+      <!-- Logo + Description -->
+      <div class="max-w-sm space-y-3">
+        <img class="w-full invert brightness-0" src="./imgs/ppl_logo.png" alt="PeopleShores Logo">
+
+        <p class="text-gray-400 leading-relaxed">
+          PeopleShores is an impact-sourcing enterprise bridging the digital gap for companies through our
+          technology and business services.
+        </p>
+
+
+        <!-- Social Icons -->
+        <div class="flex gap-4 text-2xl pt-3">
+          <a href="#" class="text-gray-400 hover:text-white">■</a>
+          <a href="#" class="text-gray-400 hover:text-white">■</a>
+          <a href="#" class="text-gray-400 hover:text-white">■</a>
+          <a href="#" class="text-gray-400 hover:text-white">■</a>
+        </div>
+      </div>
+
+      <!-- Columns -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
+
+        <!-- Column 1 -->
+        <div>
+          <h3 class="font-semibold text-sm uppercase tracking-wider text-white">
+            Quick Links
+          </h3>
+          <ul class="mt-3 space-y-2 text-gray-100">
+            <li><a class="hover:text-white" href="#">Who We Are</a></li>
+            <li><a class="hover:text-white" href="#">What We Do</a></li>
+            <li><a class="hover:text-white" href="#">Why Us</a></li>
+            <li><a class="hover:text-white" href="#">Our Impact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div>
+          <h3 class="font-semibold text-sm uppercase tracking-wider text-white">
+            Ouick Links
+          </h3>
+          <ul class="mt-3 space-y-2 text-gray-100">
+            <li><a class="hover:text-white" href="#">Our Locations</a></li>
+            <li><a class="hover:text-white" href="#">Stories</a></li>
+            <li><a class="hover:text-white" href="#">News</a></li>
+            <li><a class="hover:text-white" href="#">Careers</a></li>
+            <li><a class="hover:text-white" href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div>
+          <h3 class="font-semibold text-sm uppercase tracking-wider text-white">
+            Digital Skills Development Center
+          </h3>
+          <p class="mt-3 text-gray-100 leading-relaxed">
+            2033 Gateway Place, Suite 500<br>
+            San Jose, CA
+          </p>
+        </div>
+
+        <!-- Column 4 -->
+        <div>
+          <h3 class="font-semibold text-sm uppercase tracking-wider text-white">
+            Delivery Center
+          </h3>
+          <p class="mt-3 text-gray-100 leading-relaxed">
+            1540 Desoto Ave.<br>
+            Clarksdale, MS
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Copyright -->
+    <p class="text-lg text-gray-500 text-left pt-4">
+      © 2025 PeopleShores. All rights reserved.
+    </p>
+
+  </div>
+</footer>
+
+<script src="./mobileMenu.js"></script>
+</body>
+</html>

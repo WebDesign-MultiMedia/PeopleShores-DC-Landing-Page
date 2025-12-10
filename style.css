@@ -1,0 +1,13 @@
+
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #fff;
+  }
+  #section1 { background: #1abc9c; }
+  #section2 { background: #3498db; }
+  #section3 { background: #9b59b6; }
+  #section4 { background: #e67e22; }
