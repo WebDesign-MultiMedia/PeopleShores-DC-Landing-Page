@@ -7,12 +7,14 @@
 
   <link href="./src/output.css" rel="stylesheet">
 
-
-
     <!-- Google Font (clean corporate look) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--  -->
+    <script src="https://kit.fontawesome.com/225318ecee.js" crossorigin="anonymous"></script>
+
 </head>
 <body class="bg-gray-100 text-gray-900 font-sans">
 
@@ -27,14 +29,37 @@
       <!-- Desktop Nav -->
       <nav class="hidden md:block" aria-label="Main navigation">
         <ul class="flex items-center gap-6 sm:gap-3 sm:p-10 sm:text-center text-xs lg:text-sm font-semibold text-gray-700">
-          <li><a href="#" class="hover:text-psRed">Who We Are</a></li>
-          <li><a href="#" class="hover:text-psRed">What We Do</a></li>
-          <li><a href="#" class="hover:text-psRed">Why Us</a></li>
-          <li><a href="#" class="hover:text-psRed">Our Impact</a></li>
-          <li><a href="#" class="hover:text-psRed">Our Locations</a></li>
-          <li><a href="#" class="hover:text-psRed">Stories</a></li>
-          <li><a href="#" class="hover:text-psRed">Careers</a></li>
-          <li><a href="#" class="hover:text-psRed">Contact</a></li>
+          <li><a href="https://peopleshores.com/who-we-are/" class="hover:text-psRed">Who We Are</a></li>
+          <li><a href="https://peopleshores.com/what-we-do/" class="hover:text-psRed">What We Do</a></li>
+          <li><a href="https://peopleshores.com/why-us/" class="hover:text-psRed">Why Us</a></li>
+          <li><a href="https://peopleshores.com/our-impact/" class="hover:text-psRed">Our Impact</a></li>
+
+
+          <li class="relative group">
+              <!-- Main Link -->
+              <a href="#" class="hover:text-white flex items-center gap-1">
+                Our Locations
+                <i class="fa-regular fa-angle-down"></i>
+              </a>
+            
+              <!-- Dropdown -->
+              <ul class="absolute right-2 top-20 mt-2 w-52 bg-white text-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            
+                <li><a href="https://peopleshores.com/locations/brooklyn/" class="block px-4 py-2 hover:bg-gray-100">Brooklyn</a></li>
+                <li><a href="https://peopleshores.com/locations/clarksdale-ms/" class="block px-4 py-2 hover:bg-gray-100">Clarksdale, Mississippi</a></li>
+                <li><a href="https://peopleshores.com/locations/dekalb-ga/" class="block px-4 py-2 hover:bg-gray-100">Dekalb, Georgia</a></li>
+                <li><a href="https://peopleshores.com/locations/pine-bluff-ar/" class="block px-4 py-2 hover:bg-gray-100">Pine Bluff, Arkansas</a></li>
+                <li><a href="https://peopleshores.com/locations/san-jose-ca/" class="block px-4 py-2 hover:bg-gray-100">San Jose, CA</a></li>
+                <li><a href="https://peopleshores.com/locations/tampa-fl/" class="block px-4 py-2 hover:bg-gray-100">Tampa (FL) Center</a></li>
+                <li><a href="https://peopleshores.com/locations/bronx-ny/" class="block px-4 py-2 hover:bg-gray-100">Bronx (NY) Center</a></li>
+                <li><a href="https://peopleshores.com/locations/dc-center/" class="block px-4 py-2 hover:bg-gray-100">DC Center</a></li>
+            
+              </ul>
+            </li>
+          <li><a href="https://peopleshores.com/our-stories/" class="hover:text-psRed">Stories</a></li>
+          <li><a href="https://peopleshores.com/news/" class="hover:text-psRed">News</a></li>
+          <li><a href="https://peopleshores.com/careers/" class="hover:text-psRed">Careers</a></li>
+          <li><a href="https://peopleshores.com/contact/" class="hover:text-psRed">Contact</a></li>
         </ul>
       </nav>
 
@@ -105,54 +130,52 @@
 
     <!-- TECH OFFERINGS -->
 
-   
-    <section class="bg-sectionOne border-y border-gray-200 ">
+
+  
+    <section class="bg-sectionOne border-y border-gray-200 overflow-hidden">
       <div class="max-w-6xl mx-auto px-4 md:px-6 py-8">
         <h2 class="text-center text-lg md:text-lg font-semibold tracking-wide uppercase text-textWhite">
           Tech Offerings
         </h2>
-        <div class="text-textWhite pt-10 pb-5 flex gap-8 w-[200%] animate-[infinite-scroll_80s_linear_infinite] text-md sm:text-xl">
-
-          <!-- SET 1 -->
-          <div class="flex gap-20 shrink-0">
-            <div class="card">ServiceNow</div>
-            <div class="card">SAP / ERP</div>
-            <div class="card">Salesforce</div>
-            <div class="card">Data Analytics</div>
-            <div class="card">QA / Automation Testing</div>
-            <div class="card">AI & Emerging Tech</div>
-            <div class="card">Cloud Services (AWS, Azure, GCP)</div>
+    
+        <!-- OUTER WRAPPER PREVENTS HORIZONTAL SCROLL -->
+        <div class="pt-10 pb-5 overflow-hidden">
+    
+          <!-- SCROLLING STRIP -->
+          <div class="text-textWhite flex gap-20 animate-[infinite-scroll_80s_linear_infinite] whitespace-nowrap">
+    
+            <!-- SET 1 -->
+            <div class="flex gap-20 shrink-0">
+              <div class="card">ServiceNow</div>
+              <div class="card">SAP / ERP</div>
+              <div class="card">Salesforce</div>
+              <div class="card">Data Analytics</div>
+              <div class="card">QA / Automation Testing</div>
+              <div class="card">AI & Emerging Tech</div>
+              <div class="card">Cloud Services (AWS, Azure, GCP)</div>
+            </div>
+    
+            <!-- SET 2 -->
+            <div class="flex gap-20 shrink-0">
+              <div class="card">ServiceNow</div>
+              <div class="card">SAP / ERP</div>
+              <div class="card">Salesforce</div>
+              <div class="card">Data Analytics</div>
+              <div class="card">QA / Automation Testing</div>
+              <div class="card">AI & Emerging Tech</div>
+              <div class="card">Cloud Services (AWS, Azure, GCP)</div>
+            </div>
+    
           </div>
-  
-          <!-- SET 2 (duplicate for smooth looping) -->
-          <div class="flex gap-20 shrink-0">
-            <div class="card">ServiceNow</div>
-            <div class="card">SAP / ERP</div>
-            <div class="card">Salesforce</div>
-            <div class="card">Data Analytics</div>
-            <div class="card">QA / Automation Testing</div>
-            <div class="card">AI & Emerging Tech</div>
-            <div class="card">Cloud Services (AWS, Azure, GCP)</div>
-          </div>
-  
         </div>
-        <!-- <div class="mt-6 flex flex-wrap justify-center gap-3 text-xs sm:text-sm">
-          <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">ServiceNow</span>
-          <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">SAP / ERP</span>
-          <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">Salesforce</span>
-          <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">Data Analytics</span>
-          <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">Cybersecurity</span>
-          <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">QA / Automation Testing</span>
-          <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">AI & Emerging Tech</span>
-          <span class="px-4 py-2 bg-white border border-gray-200 rounded-sm">Cloud Services (AWS, Azure, GCP)</span>
-        </div> -->
       </div>
     </section>
+    
 
     <!-- OVERVIEW -->
     <section class="bg-white pt-40">
       <div class="max-w-4xl mx-auto px-4 md:px-6 py-10">
-        <h2 class="text-lg font-semibold">Overview</h2>
+        <h2 class="text-xl font-semibold text-psRed">Overview</h2>
         <p class="mt-3 text-sm md:text-base text-gray-700 leading-relaxed">
           The DC Center is a joint initiative between Accenture and PeopleShores, designed to develop underrepresented talent for roles in the tech industry. Through an 12-month program, the center combines 4 months of intensive technical training with 8 months of real-world consultancy experience. In partnership with Per Scholas, a nationally recognized training organization, the DC Center leverages their instructors and curriculum, which has been vetted and signed off by Accenture to align with industry standards and project needs.
         </p>
@@ -195,7 +218,7 @@
     <!-- COHORT DETAILS -->
     <section class="bg-white">
       <div class="max-w-4xl mx-auto px-4 md:px-6 py-10">
-        <h2 class="text-lg font-semibold">Cohort Details</h2>
+        <h2 class="text-xl font-semibold text-psRed">Cohort Details</h2>
 
         <div class="mt-4 grid gap-4 text-sm flex justify-center">
           <div>
@@ -216,7 +239,7 @@
     <!-- CURRICULUM OVERVIEW -->
     <section class="bg-psGray border-y border-gray-200">
       <div class="max-w-5xl mx-auto px-4 md:px-6 py-10">
-        <h2 class="text-lg font-semibold">Curriculum Overview</h2>
+        <h2 class="text-xl font-semibold text-psRed">Curriculum Overview</h2>
         <p class="mt-2 text-sm text-gray-700">
           The DC Center’s curriculum, delivered by Per Scholas instructors, has been carefully vetted and approved by Accenture to meet both technical and professional development needs. Key elements include:
         </p>
@@ -320,10 +343,10 @@
 
         <!-- Social Icons -->
         <div class="flex gap-4 text-2xl pt-3">
-          <a href="#" class="text-gray-400 hover:text-white">■</a>
-          <a href="#" class="text-gray-400 hover:text-white">■</a>
-          <a href="#" class="text-gray-400 hover:text-white">■</a>
-          <a href="#" class="text-gray-400 hover:text-white">■</a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
       </div>
 
@@ -336,10 +359,10 @@
             Quick Links
           </h3>
           <ul class="mt-3 space-y-2 text-gray-100">
-            <li><a class="hover:text-white" href="#">Who We Are</a></li>
-            <li><a class="hover:text-white" href="#">What We Do</a></li>
-            <li><a class="hover:text-white" href="#">Why Us</a></li>
-            <li><a class="hover:text-white" href="#">Our Impact</a></li>
+            <li><a class="hover:text-white" href="https://peopleshores.com/who-we-are/">Who We Are</a></li>
+            <li><a class="hover:text-white" href="https://peopleshores.com/what-we-do/">What We Do</a></li>
+            <li><a class="hover:text-white" href="https://peopleshores.com/why-us/">Why Us</a></li>
+            <li><a class="hover:text-white" href="https://peopleshores.com/our-impact/">Our Impact</a></li>
           </ul>
         </div>
 
@@ -349,11 +372,32 @@
             Ouick Links
           </h3>
           <ul class="mt-3 space-y-2 text-gray-100">
-            <li><a class="hover:text-white" href="#">Our Locations</a></li>
-            <li><a class="hover:text-white" href="#">Stories</a></li>
-            <li><a class="hover:text-white" href="#">News</a></li>
-            <li><a class="hover:text-white" href="#">Careers</a></li>
-            <li><a class="hover:text-white" href="#">Contact</a></li>
+            
+            <li class="relative group">
+              <!-- Main Link -->
+              <a href="#" class="hover:text-white flex items-center gap-1">
+                Our Locations
+                <i class="fa-regular fa-angle-down"></i>
+              </a>
+            
+              <!-- Dropdown -->
+              <ul class="absolute right-2 bottom-10 mt-2 w-52 bg-white text-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            
+                <li><a href="https://peopleshores.com/locations/brooklyn/" class="block px-4 py-2 hover:bg-gray-100">Brooklyn</a></li>
+                <li><a href="https://peopleshores.com/locations/clarksdale-ms/" class="block px-4 py-2 hover:bg-gray-100">Clarksdale, Mississippi</a></li>
+                <li><a href="https://peopleshores.com/locations/dekalb-ga/" class="block px-4 py-2 hover:bg-gray-100">Dekalb, Georgia</a></li>
+                <li><a href="https://peopleshores.com/locations/pine-bluff-ar/" class="block px-4 py-2 hover:bg-gray-100">Pine Bluff, Arkansas</a></li>
+                <li><a href="https://peopleshores.com/locations/san-jose-ca/" class="block px-4 py-2 hover:bg-gray-100">San Jose, CA</a></li>
+                <li><a href="https://peopleshores.com/locations/tampa-fl/" class="block px-4 py-2 hover:bg-gray-100">Tampa (FL) Center</a></li>
+                <li><a href="https://peopleshores.com/locations/bronx-ny/" class="block px-4 py-2 hover:bg-gray-100">Bronx (NY) Center</a></li>
+                <li><a href="https://peopleshores.com/locations/dc-center/" class="block px-4 py-2 hover:bg-gray-100">DC Center</a></li>
+            
+              </ul>
+            </li>
+                        <li><a class="hover:text-white" href="https://peopleshores.com/our-stories/">Stories</a></li>
+            <li><a class="hover:text-white" href="https://peopleshores.com/news/">News</a></li>
+            <li><a class="hover:text-white" href="https://peopleshores.com/careers/">Careers</a></li>
+            <li><a class="hover:text-white" href="https://peopleshores.com/contact/">Contact</a></li>
           </ul>
         </div>
 
