@@ -3,67 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="PeopleShores DC Landing Page"> 
-  <meta name="keywords" content="PeopleShores DC, Apprenticeship, technology"> 
-  <meta name="author" content="PeopleShores"> 
+  <meta name="description" content="PeopleShores DC Landing Page">
+  <meta name="keywords" content="PeopleShores DC, Apprenticeship, technology">
+  <meta name="author" content="PeopleShores">
 
   <title>PeopleShores DC</title>
 
   <link href="./src/output.css" rel="stylesheet">
 
-    <!-- Google Font (clean corporate look) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Font (clean corporate look) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
-    <!--  -->
-    <script src="https://kit.fontawesome.com/225318ecee.js" crossorigin="anonymous"></script>
-
+  <!--  Font Awesome -->
+  <script defer src="https://kit.fontawesome.com/225318ecee.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans">
 
+<body class="bg-gray-100 text-gray-900 font-sans">
   <!-- HEADER / NAV -->
   <header class="border-b border-gray-200 bg-white">
-    <div class=" flex items-center justify-between px-4 md:px-6 h-16">
+    <div class="flex items-center justify-between px-4 md:px-6 h-16">
       <!-- Logo -->
-      <a href="https://peopleshores.com/" class="flex items-center gap-2">
-        <img src="./imgs/ppl_logo.png" alt="PeopleShores logo" class="h-8 w-auto">
+      <a href="https://peopleshores.com/" aria-label="PeopleShores Home Page" class="flex items-center gap-2">
+        <img
+          src="./imgs/ppl_logo.png"
+          alt="PeopleShores logo"
+          width="542"
+          height="61"
+          class="h-8 w-auto">
       </a>
 
       <!-- Desktop Nav -->
       <nav class="hidden md:block" aria-label="Main navigation">
         <ul class="flex items-center gap-6 sm:gap-3 sm:p-10 sm:text-center text-xs lg:text-sm font-semibold text-gray-700">
-          <li><a href="https://peopleshores.com/who-we-are/" class="hover:text-psRed">Who We Are</a></li>
-          <li><a href="https://peopleshores.com/what-we-do/" class="hover:text-psRed">What We Do</a></li>
-          <li><a href="https://peopleshores.com/why-us/" class="hover:text-psRed">Why Us</a></li>
-          <li><a href="https://peopleshores.com/our-impact/" class="hover:text-psRed">Our Impact</a></li>
-
+          <li><a href="https://peopleshores.com/who-we-are/" aria-label="Who PeopleShores are" class="hover:text-psRed">Who We Are</a></li>
+          <li><a href="https://peopleshores.com/what-we-do/" aria-label="What PeopleShores does" class="hover:text-psRed">What We Do</a></li>
+          <li><a href="https://peopleshores.com/why-us/" aria-label="Why PeopleShores" class="hover:text-psRed">Why Us</a></li>
+          <li><a href="https://peopleshores.com/our-impact/" aria-label="PeopleShores Impact" class="hover:text-psRed">Our Impact</a></li>
 
           <li class="relative group">
-              <!-- Main Link -->
-              <a href="https://peopleshores.com/locations/" class="hover:text-psRed flex items-center gap-1">
-                Our Locations
-                <i class="fa-regular fa-angle-down"></i>
-              </a>
-            
-              <!-- Dropdown -->
-              <ul class="absolute right-2 top-15 mt-2 w-52 bg-white text-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-            
-                <li><a href="https://peopleshores.com/locations/brooklyn/" class="block px-4 py-2 hover:bg-gray-100">Brooklyn</a></li>
-                <li><a href="https://peopleshores.com/locations/clarksdale-ms/" class="block px-4 py-2 hover:bg-gray-100">Clarksdale, Mississippi</a></li>
-                <li><a href="https://peopleshores.com/locations/dekalb-ga/" class="block px-4 py-2 hover:bg-gray-100">Dekalb, Georgia</a></li>
-                <li><a href="https://peopleshores.com/locations/pine-bluff-ar/" class="block px-4 py-2 hover:bg-gray-100">Pine Bluff, Arkansas</a></li>
-                <li><a href="https://peopleshores.com/locations/san-jose-ca/" class="block px-4 py-2 hover:bg-gray-100">San Jose, CA</a></li>
-                <li><a href="https://peopleshores.com/locations/tampa-fl/" class="block px-4 py-2 hover:bg-gray-100">Tampa (FL) Center</a></li>
-                <li><a href="https://peopleshores.com/locations/bronx-ny/" class="block px-4 py-2 hover:bg-gray-100">Bronx (NY) Center</a></li>
-                <li><a href="https://peopleshores.com/locations/dc-center/" class="block px-4 py-2 hover:bg-gray-100">DC Center</a></li>
-            
-              </ul>
-            </li>
-          <li><a href="https://peopleshores.com/our-stories/" class="hover:text-psRed">Stories</a></li>
-          <li><a href="https://peopleshores.com/news/" class="hover:text-psRed">News</a></li>
-          <li><a href="https://peopleshores.com/careers/" class="hover:text-psRed">Careers</a></li>
-          <li><a href="https://peopleshores.com/contact/" class="hover:text-psRed">Contact</a></li>
+            <!-- Main Link -->
+            <a href="https://peopleshores.com/locations/" class="hover:text-psRed flex items-center gap-1">
+              Our Locations
+              <i class="fa-regular fa-angle-down"></i>
+            </a>
+
+            <!-- Dropdown -->
+            <ul class="absolute right-2 top-15 mt-2 w-52 bg-white text-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <li><a href="https://peopleshores.com/locations/brooklyn/" aria-label="Peopleshores Brooklyn" class="block px-4 py-2 hover:bg-gray-100">Brooklyn</a></li>
+              <li><a href="https://peopleshores.com/locations/clarksdale-ms/" aria-label="PeopleShores Clarksdale, Mississippi" class="block px-4 py-2 hover:bg-gray-100">Clarksdale, Mississippi</a></li>
+              <li><a href="https://peopleshores.com/locations/dekalb-ga/" aria-label="PeopleShores Dekalb, Georgia" class="block px-4 py-2 hover:bg-gray-100">Dekalb, Georgia</a></li>
+              <li><a href="https://peopleshores.com/locations/pine-bluff-ar/" aria-label="PeopleShores Pine Bluff, Arkansas" class="block px-4 py-2 hover:bg-gray-100">Pine Bluff, Arkansas</a></li>
+              <li><a href="https://peopleshores.com/locations/san-jose-ca/" aria-label="PeopleShores San Jose, CA" class="block px-4 py-2 hover:bg-gray-100">San Jose, CA</a></li>
+              <li><a href="https://peopleshores.com/locations/tampa-fl/" aria-label="PeopleShores Tampa (FL) Center" class="block px-4 py-2 hover:bg-gray-100">Tampa (FL) Center</a></li>
+              <li><a href="https://peopleshores.com/locations/bronx-ny/" aria-label="PeopleShores Bronx NY" class="block px-4 py-2 hover:bg-gray-100">Bronx (NY) Center</a></li>
+              <li><a href="https://peopleshores.com/locations/dc-center/" aria-label="PeopleShores DC Center" class="block px-4 py-2 hover:bg-gray-100">DC Center</a></li>
+            </ul>
+          </li>
+
+          <li><a href="https://peopleshores.com/our-stories/" aria-label="PeopleShores Stories" class="hover:text-psRed">Stories</a></li>
+          <li><a href="https://peopleshores.com/news/" aria-label="PeopleShores News" class="hover:text-psRed">News</a></li>
+          <li><a href="https://peopleshores.com/careers/" aria-label="PeopleShores Careers" class="hover:text-psRed">Careers</a></li>
+          <li><a href="https://peopleshores.com/contact/" aria-label="PeopleShores Contact" class="hover:text-psRed">Contact</a></li>
         </ul>
       </nav>
 
@@ -73,8 +77,7 @@
         class="md:hidden inline-flex items-center justify-center rounded border border-gray-300 p-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-psRed"
         aria-label="Toggle navigation"
         aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
+        aria-controls="mobile-menu">
         <!-- simple hamburger icon -->
         <svg id="icon-open" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -90,34 +93,34 @@
     <!-- Mobile dropdown nav -->
     <nav id="mobile-menu" class="md:hidden hidden border-t border-gray-200 bg-white" aria-label="Mobile main navigation">
       <ul class="flex flex-col px-4 py-3 text-sm font-semibold text-gray-700 space-y-2 text-center">
-        <li><a href="#" class="block py-1 hover:text-psRed">Who We Are</a></li>
-        <li><a href="#" class="block py-1 hover:text-psRed">What We Do</a></li>
-        <li><a href="#" class="block py-1 hover:text-psRed">Why Us</a></li>
-        <li><a href="#" class="block py-1 hover:text-psRed">Our Impact</a></li>
+        <li><a href="https://peopleshores.com/who-we-are/" aria-label="Who PeopleShores is" class="block py-1 hover:text-psRed">Who We Are</a></li>
+        <li><a href="https://peopleshores.com/what-we-do/" aria-label="What PeopleShores does" class="block py-1 hover:text-psRed">What We Do</a></li>
+        <li><a href="https://peopleshores.com/why-us/" aria-label="Why PeopleShores" class="block py-1 hover:text-psRed">Why Us</a></li>
+        <li><a href="https://peopleshores.com/our-impact/" aria-label="PeopleShores Impact" class="block py-1 hover:text-psRed">Our Impact</a></li>
+
         <li class="relative group">
           <!-- Main Link -->
-          <a href="https://peopleshores.com/locations/" class=" flex items-center justify-center gap-1 ">
+          <a href="https://peopleshores.com/locations/" aria-label="PeopleShores Centers" class="flex items-center justify-center gap-1">
             Our Locations
             <i class="fa-regular fa-angle-down"></i>
           </a>
-        
+
           <!-- Dropdown -->
           <ul class="absolute left-[20%] top-full mt-2 w-52 bg-white text-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-       
-            <li><a href="https://peopleshores.com/locations/brooklyn/" class="block px-4 py-2 hover:bg-gray-100">Brooklyn</a></li>
-            <li><a href="https://peopleshores.com/locations/clarksdale-ms/" class="block px-4 py-2 hover:bg-gray-100">Clarksdale, Mississippi</a></li>
-            <li><a href="https://peopleshores.com/locations/dekalb-ga/" class="block px-4 py-2 hover:bg-gray-100">Dekalb, Georgia</a></li>
-            <li><a href="https://peopleshores.com/locations/pine-bluff-ar/" class="block px-4 py-2 hover:bg-gray-100">Pine Bluff, Arkansas</a></li>
-            <li><a href="https://peopleshores.com/locations/san-jose-ca/" class="block px-4 py-2 hover:bg-gray-100">San Jose, CA</a></li>
-            <li><a href="https://peopleshores.com/locations/tampa-fl/" class="block px-4 py-2 hover:bg-gray-100">Tampa (FL) Center</a></li>
-            <li><a href="https://peopleshores.com/locations/bronx-ny/" class="block px-4 py-2 hover:bg-gray-100">Bronx (NY) Center</a></li>
-            <li><a href="https://peopleshores.com/locations/dc-center/" class="block px-4 py-2 hover:bg-gray-100">DC Center</a></li>
-        
+            <li><a href="https://peopleshores.com/locations/brooklyn/" aria-label="PeopleShores Brooklyn" class="block px-4 py-2 hover:bg-gray-100">Brooklyn</a></li>
+            <li><a href="https://peopleshores.com/locations/clarksdale-ms/" aria-label="PeopleShores Clarksdale, Mississippi" class="block px-4 py-2 hover:bg-gray-100">Clarksdale, Mississippi</a></li>
+            <li><a href="https://peopleshores.com/locations/dekalb-ga/" aria-label="PeopleShores Dekalb, Georgia" class="block px-4 py-2 hover:bg-gray-100">Dekalb, Georgia</a></li>
+            <li><a href="https://peopleshores.com/locations/pine-bluff-ar/" aria-label="PeopleShores Pine Bluff, Arkansas" class="block px-4 py-2 hover:bg-gray-100">Pine Bluff, Arkansas</a></li>
+            <li><a href="https://peopleshores.com/locations/san-jose-ca/" aria-label="PeopleShores San Jose, CA" class="block px-4 py-2 hover:bg-gray-100">San Jose, CA</a></li>
+            <li><a href="https://peopleshores.com/locations/tampa-fl/" aria-label="PeopleShores Tampa, Florida" class="block px-4 py-2 hover:bg-gray-100">Tampa (FL) Center</a></li>
+            <li><a href="https://peopleshores.com/locations/bronx-ny/" aria-label="PeopleShores Bronx NY" class="block px-4 py-2 hover:bg-gray-100">Bronx (NY) Center</a></li>
+            <li><a href="https://peopleshores.com/locations/dc-center/" aria-label="PeopleShores DC Center" class="block px-4 py-2 hover:bg-gray-100">DC Center</a></li>
           </ul>
         </li>
-        <li><a href="#" class="block py-1 hover:text-psRed">Stories</a></li>
-        <li><a href="#" class="block py-1 hover:text-psRed">Careers</a></li>
-        <li><a href="#" class="block py-1 hover:text-psRed">Contact</a></li>
+
+        <li><a href="https://peopleshores.com/our-stories/" aria-label="PeopleShores Stories" class="block py-1 hover:text-psRed">Stories</a></li>
+        <li><a href="https://peopleshores.com/careers/" aria-label="PeopleShores Careers" class="block py-1 hover:text-psRed">Careers</a></li>
+        <li><a href="https://peopleshores.com/contact/" aria-label="PeopleShores Contact" class="block py-1 hover:text-psRed">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -137,61 +140,75 @@
           <p class="mt-4 text-sm md:text-base text-gray-700 max-w-md">
             Empowering apprentices with industry-aligned training and real-world consulting.
           </p>
-          <button
-            class="mt-6 inline-flex items-center justify-center rounded-sm bg-psRed px-5 py-2 text-sm font-semibold text-white hover:bg-psRedDark">
-            <a href="https://peopleshores.com/what-we-do/">Learn More</a> 
-          </button>
+
+          <!-- Bigger, descriptive CTA (fixes SEO + touch target) -->
+          <a
+            href="https://peopleshores.com/what-we-do/"
+            aria-label="Learn more about PeopleShores services and what we do"
+            class="mt-6 inline-flex items-center justify-center rounded-sm bg-psRed px-6 py-3 text-sm font-semibold text-white hover:bg-psRedDark">
+            Learn more about our services
+          </a>
         </div>
 
-        <!-- Right: image placeholder -->
+        <!-- Right: slideshow -->
         <div class="md:w-1/2">
-          <!-- <div class="h-56 sm:h-64 md:h-80 w-full bg-gray-200 border border-gray-300 flex items-center justify-center text-gray-500 text-sm">
-            <img class=" rounded-xl" src="./imgs/DC/PeopleShoresTeam.webp" alt="PeopleShores Team">
-          </div> -->
-
-
-
           <div class="slideshow-container relative bottom-5 md:bottom-0">
+            <div class="mySlides fade">
+              <div class="aspect-[4/3] w-full rounded-lg overflow-hidden">
+                <img
+                  src="./imgs/DC/PeopleShoresTeam.webp"
+                  alt="PeopleShores team at the DC Center"
+                  width="800"
+                  height="600"
+                  class="w-full h-full object-cover">
+              </div>
+            </div>
 
-            <div class="mySlides fade ">
-              <img class="rounded-lg " src="./imgs/DC/PeopleShoresTeam.webp" alt="peopleShores team" style="width:100%">
-            </div>
-            
             <div class="mySlides fade">
-              <img class="rounded-lg" src="./imgs/DC/PeopleShoresClass-2.webp" alt="peopleShores Class" style="width:100%">
+              <div class="aspect-[4/3] w-full rounded-lg overflow-hidden">
+                <img
+                  src="./imgs/DC/PeopleShoresClass-2.webp"
+                  alt="PeopleShores apprentices in a classroom"
+                  width="800"
+                  height="600"
+                  class="w-full h-full object-cover">
+              </div>
             </div>
-            
+
             <div class="mySlides fade">
-              <img class="rounded-lg" src="./imgs/DC/PeopleShoresLogo.webp" alt="peopleShores Class 2" style="width:100%">
+              <div class="aspect-[4/3] w-full rounded-lg overflow-hidden">
+                <img
+                  src="./imgs/DC/PeopleShoresLogo.webp"
+                  alt="PeopleShores DC Center logo wall"
+                  width="800"
+                  height="600"
+                  class="w-full h-full object-cover">
+              </div>
             </div>
-            
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div>        </div>
+          </div>
+
+          <br>
+
+          <div class="text-center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- TECH OFFERINGS -->
-
-
-  
-    <section class="bg-sectionOne border-y border-gray-200 overflow-hidden h-72">
+    <section class="bg-sectionOne border-y border-gray-200 overflow-hidden py-10">
       <div class="max-w-6xl mx-auto px-4 md:px-6 py-5">
         <h2 class="text-center text-lg md:text-lg font-semibold tracking-wide uppercase text-textWhite">
           Tech Offerings
         </h2>
-    
+
         <!-- OUTER WRAPPER PREVENTS HORIZONTAL SCROLL -->
         <div class="pt-10 pb-5 overflow-hidden">
-    
           <!-- SCROLLING STRIP -->
           <div class="text-textWhite flex gap-20 animate-[infinite-scroll_80s_linear_infinite] whitespace-nowrap">
-    
             <!-- SET 1 -->
             <div class="flex gap-20 shrink-0">
               <div class="card">ServiceNow</div>
@@ -199,10 +216,10 @@
               <div class="card">Salesforce</div>
               <div class="card">Data Analytics</div>
               <div class="card">QA / Automation Testing</div>
-              <div class="card">AI & Emerging Tech</div>
+              <div class="card">AI &amp; Emerging Tech</div>
               <div class="card">Cloud Services (AWS, Azure, GCP)</div>
             </div>
-    
+
             <!-- SET 2 -->
             <div class="flex gap-20 shrink-0">
               <div class="card">ServiceNow</div>
@@ -210,18 +227,16 @@
               <div class="card">Salesforce</div>
               <div class="card">Data Analytics</div>
               <div class="card">QA / Automation Testing</div>
-              <div class="card">AI & Emerging Tech</div>
+              <div class="card">AI &amp; Emerging Tech</div>
               <div class="card">Cloud Services (AWS, Azure, GCP)</div>
             </div>
-    
           </div>
         </div>
       </div>
     </section>
-    
 
     <!-- OVERVIEW -->
-    <section class="bg-white sm:pt-40 ">
+    <section class="bg-white sm:pt-40">
       <div class="max-w-4xl mx-auto px-4 md:px-6 py-10">
         <h2 class="text-xl font-semibold text-psRed">Overview</h2>
         <p class="mt-3 text-sm md:text-base text-gray-700 leading-relaxed">
@@ -233,8 +248,8 @@
     <!-- PROGRAM STRUCTURE -->
     <section class="bg-psRed border-y border-gray-200">
       <div class="max-w-5xl mx-auto px-4 md:px-6 py-10">
-        <h2 class="text-lg font-semibold  text-center text-textWhite">Program Structure</h2>
-        <p class="mt-2 text-sm text-gray-700 text-center max-w-2xl mx-auto text-textWhite">
+        <h2 class="text-lg font-semibold text-center text-textWhite">Program Structure</h2>
+        <p class="mt-2 text-sm text-center max-w-2xl mx-auto text-textWhite">
           The program is structured in two distinct phases.
         </p>
 
@@ -255,8 +270,7 @@
               2. Consultancy Phase (8 Months)
             </h3>
             <p class="mt-3 text-sm text-gray-700">
-              Following their training, apprentices transition to consulting roles on Accenture teams. This phase focuses on
-              applying learned skills in real-world scenarios with the goal of securing full-time offers by the end of the program.
+              Following their training, apprentices transition to consulting roles on Accenture teams. This phase focuses on applying learned skills in real-world scenarios with the goal of securing full-time offers by the end of the program.
             </p>
           </article>
         </div>
@@ -279,8 +293,6 @@
             </ul>
           </div>
         </div>
-
-      </div>
       </div>
     </section>
 
@@ -296,7 +308,7 @@
         <div class="mt-6 grid gap-6 md:grid-cols-2">
           <article class="bg-psRed text-textWhite border border-gray-200 rounded-lg p-5 shadow-sm">
             <h3 class="font-semibold text-md text-center underline">Technical Training</h3>
-            <ul class="mt-3 list-disc list-inside text-sm t space-y-6 list-none pl-10">
+            <ul class="mt-3 list-disc list-inside text-sm space-y-2 pl-6">
               <li>CySA+: Threat detection, incident response, log analysis.</li>
               <li>Splunk: Data monitoring, dashboards, alerts.</li>
               <li>Data Analytics: SQL for visualization.</li>
@@ -306,50 +318,53 @@
 
           <article class="bg-psRed border border-gray-200 text-textWhite rounded-lg p-5 shadow-sm">
             <h3 class="font-semibold text-md text-center underline">Professional Development</h3>
-            <ul class="mt-3 list-disc list-inside text-sm t space-y-6 list-none pl-10 ml-4">
-              <li>Agile and Scrum Methodologies.</li>
-              <li>TEffective communication and teamwork.</li>
+            <ul class="mt-3 list-disc list-inside text-sm space-y-2 pl-6">
+              <li>Agile and Scrum methodologies.</li>
+              <li>Effective communication and teamwork.</li>
               <li>Leadership and time management.</li>
             </ul>
           </article>
         </div>
-        
-      <!-- Day-to-Day Programming -->
-<div class="mt-8 flex flex-col sm:flex-row items-center sm:items-start gap-8">
 
-  <!-- Text Section -->
-  <div class="w-full sm:w-1/2">
-    <h3 class="font-semibold text-md text-center">Day-to-Day Programming</h3>
+        <!-- Day-to-Day Programming -->
+        <div class="mt-8 flex flex-col sm:flex-row items-center sm:items-start gap-8">
+          <!-- Text Section -->
+          <div class="w-full sm:w-1/2">
+            <h3 class="font-semibold text-md text-center">Day-to-Day Programming</h3>
 
-    <p class="mt-3 text-sm text-gray-700 mb-4">
-      Apprentices at the DC Center are paid employees from the start of the
-      program. Their standard working hours are 8:30 AM to 5:30 PM, mirroring
-      a professional environment to prepare them for their consulting roles.
-    </p>
+            <p class="mt-3 text-sm text-gray-700 mb-4">
+              Apprentices at the DC Center are paid employees from the start of the
+              program. Their standard working hours are 8:30 AM to 5:30 PM, mirroring
+              a professional environment to prepare them for their consulting roles.
+            </p>
 
-    <ul class="mt-3 list-disc list-inside text-sm text-gray-700 space-y-6 list-none p-2">
-      <li>Instructor-led technical sessions or hands-on coding exercises.</li>
-      <li>Project-based learning, including pair programming and peer reviews.</li>
-      <li>Focused self-study for skill development.</li>
-      <li>Completing labs and assignments to reinforce technical concepts.</li>
-      <li>Lead check-ins to address challenges and track progress.</li>
-    </ul>
-  </div>
+            <ul class="mt-3 list-disc list-inside text-sm text-gray-700 space-y-2 pl-4">
+              <li>Instructor-led technical sessions or hands-on coding exercises.</li>
+              <li>Project-based learning, including pair programming and peer reviews.</li>
+              <li>Focused self-study for skill development.</li>
+              <li>Completing labs and assignments to reinforce technical concepts.</li>
+              <li>Lead check-ins to address challenges and track progress.</li>
+            </ul>
+          </div>
 
-  <!-- Image Section -->
-  <div class="w-full sm:w-1/2 flex justify-center">
-    <img class="w-full rounded-xl object-cover" src="./imgs/DC/PeopleShoresClass.webp" alt="">
-
-  </div>
-
-</div>
-
+          <!-- Image Section -->
+          <div class="w-full sm:w-1/2 flex justify-center">
+            <div class="aspect-[4/3] w-full rounded-xl overflow-hidden">
+              <img
+                src="./imgs/DC/PeopleShoresClass.webp"
+                alt="Apprentices collaborating at the DC Center"
+                width="800"
+                height="600"
+                class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
 
         <!-- Assessments -->
         <div class="mt-8 flex justify-center flex-col items-center">
           <article class="bg-white border border-gray-200 rounded-sm p-5 shadow-sm">
             <h3 class="font-semibold text-lg text-center">Assessments</h3>
-            <ul class="mt-3 list-disc list-inside text-sm text-gray-700 space-y-6 pl-10 pr-10 list-none p-2">
+            <ul class="mt-3 list-disc list-inside text-sm text-gray-700 space-y-2 px-4">
               <li>Knowledge-Based Assessments (KBA): Closed-book, close-ended multiple-choice quizzes administered at the end of each section to evaluate theoretical understanding.</li>
               <li>Skill-Based Assessments (SBA): Project-based tasks conducted after most sections to assess the application of technical skills in practical, real-world scenarios.</li>
             </ul>
@@ -359,130 +374,130 @@
     </section>
 
     <!-- CTA BANNER -->
-    <section class="bg-psRed ">
+    <section class="bg-psRed">
       <div class="max-w-5xl mx-auto px-4 md:px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 pt-10">
         <p class="text-white text-sm md:text-base font-semibold text-center md:text-left">
-          Unlock Your Business Potential. Connect with PeopleShores Today!
+          Unlock your business potential. Connect with PeopleShores today!
         </p>
-        <button
-          class="inline-flex items-center justify-center rounded-sm bg-white px-5 py-2 text-xs md:text-sm font-semibold text-psRed hover:bg-gray-100">
-         <a href="https://peopleshores.com/our-impact/"> GET YOUR FREE QUOTE TODAY!</a>
-        </button>
+        <a
+          href="https://peopleshores.com/our-impact/"
+          aria-label="Get a free quote from PeopleShores"
+          class="inline-flex items-center justify-center rounded-sm bg-white px-6 py-3 text-sm md:text-sm font-semibold text-psRed hover:bg-gray-100">
+          Get your free quote today
+        </a>
       </div>
     </section>
   </main>
 
   <!-- FOOTER -->
-<footer class="bg-psNavy text-gray-300 text-xs">
-  <div class="max-w-6xl mx-auto px-4 md:px-6 py-10 space-y-10">
+  <footer class="bg-psNavy text-white text-xs">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 py-10 space-y-10">
+      <!-- Top Row -->
+      <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+        <!-- Logo + Description -->
+        <div class="max-w-sm space-y-3">
+          <img
+            src="./imgs/ppl_logo.png"
+            alt="PeopleShores logo"
+            width="542"
+            height="61"
+            class="h-10 w-auto invert brightness-0">
 
-    <!-- Top Row -->
-    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+          <p class="text-gray-200 leading-relaxed">
+            PeopleShores is an impact-sourcing enterprise bridging the digital gap for companies through our
+            technology and business services.
+          </p>
 
-      <!-- Logo + Description -->
-      <div class="max-w-sm space-y-3">
-        <img class="w-full invert brightness-0" src="./imgs/ppl_logo.png" alt="PeopleShores Logo">
+          <!-- Social Icons -->
+          <div class="flex gap-4 text-2xl pt-3">
+            <a href="https://www.youtube.com/watch?v=PDYg7O112gw" aria-label="PeopleShores YouTube" class="text-gray-200 hover:text-white"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/peopleshores/" aria-label="PeopleShores LinkedIn" class="text-gray-200 hover:text-white"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/peopleshores/" aria-label="PeopleShores Facebook" class="text-gray-200 hover:text-white"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.facebook.com/peopleshores/" aria-label="PeopleShores Twitter" class="text-gray-200 hover:text-white"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
 
-        <p class="text-gray-400 leading-relaxed">
-          PeopleShores is an impact-sourcing enterprise bridging the digital gap for companies through our
-          technology and business services.
-        </p>
+        <!-- Columns -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
+          <!-- Column 1 -->
+          <div>
+            <h3 class="font-semibold text-sm uppercase tracking-wider text-white">
+              Quick Links
+            </h3>
+            <ul class="mt-3 space-y-2 text-gray-200">
+              <li><a class="hover:text-white" aria-label="Who PeopleShores is" href="https://peopleshores.com/who-we-are/">Who We Are</a></li>
+              <li><a class="hover:text-white" aria-label="What PeopleShores does" href="https://peopleshores.com/what-we-do/">What We Do</a></li>
+              <li><a class="hover:text-white" aria-label="Why PeopleShores" href="https://peopleshores.com/why-us/">Why Us</a></li>
+              <li><a class="hover:text-white" aria-label="PeopleShores Impact" href="https://peopleshores.com/our-impact/">Our Impact</a></li>
+            </ul>
+          </div>
 
+          <!-- Column 2 -->
+          <div>
+            <h3 class="font-semibold text-sm uppercase tracking-wider text-white">
+              Quick Links
+            </h3>
+            <ul class="mt-3 space-y-2 text-gray-200">
+              <li class="relative group">
+                <!-- Main Link -->
+                <a href="https://peopleshores.com/locations/" class="hover:text-white flex items-center gap-1">
+                  Our Locations
+                  <i class="fa-regular fa-angle-down"></i>
+                </a>
 
-        <!-- Social Icons -->
-        <div class="flex gap-4 text-2xl pt-3">
-          <a href="https://www.youtube.com/watch?v=PDYg7O112gw" class="text-gray-400 hover:text-white"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://www.linkedin.com/company/peopleshores/" class="text-gray-400 hover:text-white"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.facebook.com/peopleshores/" class="text-gray-400 hover:text-white"><i class="fa-brands fa-square-facebook"></i></a>
-          <a href="https://www.facebook.com/peopleshores/" class="text-gray-400 hover:text-white"><i class="fa-brands fa-x-twitter"></i></a>
+                <!-- Dropdown -->
+                <ul class="absolute right-2 bottom-10 mt-2 w-52 bg-white text-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <li><a href="https://peopleshores.com/locations/brooklyn/" aria-label="PeopleShores Brooklyn" class="block px-4 py-2 hover:bg-gray-100">Brooklyn</a></li>
+                  <li><a href="https://peopleshores.com/locations/clarksdale-ms/" aria-label="PeopleShores Clarksdale Mississippi" class="block px-4 py-2 hover:bg-gray-100">Clarksdale, Mississippi</a></li>
+                  <li><a href="https://peopleshores.com/locations/dekalb-ga/" aria-label="PeopleShores Dekalb Georgia" class="block px-4 py-2 hover:bg-gray-100">Dekalb, Georgia</a></li>
+                  <li><a href="https://peopleshores.com/locations/pine-bluff-ar/" aria-label="PeopleShores Pine Bluff Arkansas" class="block px-4 py-2 hover:bg-gray-100">Pine Bluff, Arkansas</a></li>
+                  <li><a href="https://peopleshores.com/locations/san-jose-ca/" aria-label="PeopleShores San Jose CA" class="block px-4 py-2 hover:bg-gray-100">San Jose, CA</a></li>
+                  <li><a href="https://peopleshores.com/locations/tampa-fl/" aria-label="PeopleShores Tampa Center" class="block px-4 py-2 hover:bg-gray-100">Tampa (FL) Center</a></li>
+                  <li><a href="https://peopleshores.com/locations/bronx-ny/" aria-label="PeopleShores Bronx Center" class="block px-4 py-2 hover:bg-gray-100">Bronx (NY) Center</a></li>
+                  <li><a href="https://peopleshores.com/locations/dc-center/" aria-label="PeopleShores DC Center" class="block px-4 py-2 hover:bg-gray-100">DC Center</a></li>
+                </ul>
+              </li>
+              <li><a class="hover:text-white" aria-label="PeopleShores Stories" href="https://peopleshores.com/our-stories/">Stories</a></li>
+              <li><a class="hover:text-white" aria-label="PeopleShores News" href="https://peopleshores.com/news/">News</a></li>
+              <li><a class="hover:text-white" aria-label="PeopleShores Careers" href="https://peopleshores.com/careers/">Careers</a></li>
+              <li><a class="hover:text-white" aria-label="PeopleShores contact" href="https://peopleshores.com/contact/">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3 -->
+          <div>
+            <h3 class="font-semibold text-sm uppercase tracking-wider text-white">
+              Digital Skills Development Center
+            </h3>
+            <p class="mt-3 text-gray-200 leading-relaxed">
+              2033 Gateway Place, Suite 500<br>
+              San Jose, CA
+            </p>
+          </div>
+
+          <!-- Column 4 -->
+          <div>
+            <h3 class="font-semibold text-sm uppercase tracking-wider text-white">
+              Delivery Center
+            </h3>
+            <p class="mt-3 text-gray-200 leading-relaxed">
+              1540 Desoto Ave.<br>
+              Clarksdale, MS
+            </p>
+          </div>
         </div>
       </div>
 
-      <!-- Columns -->
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
-
-        <!-- Column 1 -->
-        <div>
-          <h3 class="font-semibold text-sm uppercase tracking-wider text-white">
-            Quick Links
-          </h3>
-          <ul class="mt-3 space-y-2 text-gray-100">
-            <li><a class="hover:text-white" href="https://peopleshores.com/who-we-are/">Who We Are</a></li>
-            <li><a class="hover:text-white" href="https://peopleshores.com/what-we-do/">What We Do</a></li>
-            <li><a class="hover:text-white" href="https://peopleshores.com/why-us/">Why Us</a></li>
-            <li><a class="hover:text-white" href="https://peopleshores.com/our-impact/">Our Impact</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 2 -->
-        <div>
-          <h3 class="font-semibold text-sm uppercase tracking-wider text-white">
-            Ouick Links
-          </h3>
-          <ul class="mt-3 space-y-2 text-gray-100">
-            
-            <li class="relative group">
-              <!-- Main Link -->
-              <a href="https://peopleshores.com/locations/" class="hover:text-white flex items-center gap-1">
-                Our Locations
-                <i class="fa-regular fa-angle-down"></i>
-              </a>
-            
-              <!-- Dropdown -->
-              <ul class="absolute right-2 bottom-10 mt-2 w-52 bg-white text-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-            
-                <li><a href="https://peopleshores.com/locations/brooklyn/" class="block px-4 py-2 hover:bg-gray-100">Brooklyn</a></li>
-                <li><a href="https://peopleshores.com/locations/clarksdale-ms/" class="block px-4 py-2 hover:bg-gray-100">Clarksdale, Mississippi</a></li>
-                <li><a href="https://peopleshores.com/locations/dekalb-ga/" class="block px-4 py-2 hover:bg-gray-100">Dekalb, Georgia</a></li>
-                <li><a href="https://peopleshores.com/locations/pine-bluff-ar/" class="block px-4 py-2 hover:bg-gray-100">Pine Bluff, Arkansas</a></li>
-                <li><a href="https://peopleshores.com/locations/san-jose-ca/" class="block px-4 py-2 hover:bg-gray-100">San Jose, CA</a></li>
-                <li><a href="https://peopleshores.com/locations/tampa-fl/" class="block px-4 py-2 hover:bg-gray-100">Tampa (FL) Center</a></li>
-                <li><a href="https://peopleshores.com/locations/bronx-ny/" class="block px-4 py-2 hover:bg-gray-100">Bronx (NY) Center</a></li>
-                <li><a href="https://peopleshores.com/locations/dc-center/" class="block px-4 py-2 hover:bg-gray-100">DC Center</a></li>
-            
-              </ul>
-            </li>
-                        <li><a class="hover:text-white" href="https://peopleshores.com/our-stories/">Stories</a></li>
-            <li><a class="hover:text-white" href="https://peopleshores.com/news/">News</a></li>
-            <li><a class="hover:text-white" href="https://peopleshores.com/careers/">Careers</a></li>
-            <li><a class="hover:text-white" href="https://peopleshores.com/contact/">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 3 -->
-        <div>
-          <h3 class="font-semibold text-sm uppercase tracking-wider text-white">
-            Digital Skills Development Center
-          </h3>
-          <p class="mt-3 text-gray-100 leading-relaxed">
-            2033 Gateway Place, Suite 500<br>
-            San Jose, CA
-          </p>
-        </div>
-
-        <!-- Column 4 -->
-        <div>
-          <h3 class="font-semibold text-sm uppercase tracking-wider text-white">
-            Delivery Center
-          </h3>
-          <p class="mt-3 text-gray-100 leading-relaxed">
-            1540 Desoto Ave.<br>
-            Clarksdale, MS
-          </p>
-        </div>
-
+      <!-- Bottom Copyright -->
+      <div class="max-w-6xl mx-auto px-4 md:px-6 pb-4">
+        <p class="text-xs md:text-sm text-gray-200 text-left pt-4">
+          © 2025 PeopleShores. All rights reserved.
+        </p>
       </div>
     </div>
+  </footer>
 
-    <!-- Bottom Copyright -->
-    <p class="text-lg text-gray-500 text-left pt-4">
-      © 2025 PeopleShores. All rights reserved.
-    </p>
-
-  </div>
-</footer>
-
-<script src="./mobileMenu.js"></script>
-<script src="./slideshow.js"></script>
+  <script src="./mobileMenu.js"></script>
+  <script src="./slideshow.js"></script>
 </body>
 </html>
