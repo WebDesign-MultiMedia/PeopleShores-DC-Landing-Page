@@ -37,13 +37,13 @@
 
           <li class="relative group">
               <!-- Main Link -->
-              <a href="#" class="hover:text-white flex items-center gap-1">
+              <a href="https://peopleshores.com/locations/" class="hover:text-psRed flex items-center gap-1">
                 Our Locations
                 <i class="fa-regular fa-angle-down"></i>
               </a>
             
               <!-- Dropdown -->
-              <ul class="absolute right-2 top-20 mt-2 w-52 bg-white text-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <ul class="absolute right-2 top-15 mt-2 w-52 bg-white text-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
             
                 <li><a href="https://peopleshores.com/locations/brooklyn/" class="block px-4 py-2 hover:bg-gray-100">Brooklyn</a></li>
                 <li><a href="https://peopleshores.com/locations/clarksdale-ms/" class="block px-4 py-2 hover:bg-gray-100">Clarksdale, Mississippi</a></li>
@@ -90,7 +90,27 @@
         <li><a href="#" class="block py-1 hover:text-psRed">What We Do</a></li>
         <li><a href="#" class="block py-1 hover:text-psRed">Why Us</a></li>
         <li><a href="#" class="block py-1 hover:text-psRed">Our Impact</a></li>
-        <li><a href="#" class="block py-1 hover:text-psRed">Our Locations</a></li>
+        <li class="relative group">
+          <!-- Main Link -->
+          <a href="https://peopleshores.com/locations/" class=" flex items-center justify-center gap-1 ">
+            Our Locations
+            <i class="fa-regular fa-angle-down"></i>
+          </a>
+        
+          <!-- Dropdown -->
+          <ul class="absolute left-[20%] top-2 mt-5 w-52 bg-white text-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hoverL: transition-all duration-200 z-50">
+        
+            <li><a href="https://peopleshores.com/locations/brooklyn/" class="block px-4 py-2 hover:bg-gray-100">Brooklyn</a></li>
+            <li><a href="https://peopleshores.com/locations/clarksdale-ms/" class="block px-4 py-2 hover:bg-gray-100">Clarksdale, Mississippi</a></li>
+            <li><a href="https://peopleshores.com/locations/dekalb-ga/" class="block px-4 py-2 hover:bg-gray-100">Dekalb, Georgia</a></li>
+            <li><a href="https://peopleshores.com/locations/pine-bluff-ar/" class="block px-4 py-2 hover:bg-gray-100">Pine Bluff, Arkansas</a></li>
+            <li><a href="https://peopleshores.com/locations/san-jose-ca/" class="block px-4 py-2 hover:bg-gray-100">San Jose, CA</a></li>
+            <li><a href="https://peopleshores.com/locations/tampa-fl/" class="block px-4 py-2 hover:bg-gray-100">Tampa (FL) Center</a></li>
+            <li><a href="https://peopleshores.com/locations/bronx-ny/" class="block px-4 py-2 hover:bg-gray-100">Bronx (NY) Center</a></li>
+            <li><a href="https://peopleshores.com/locations/dc-center/" class="block px-4 py-2 hover:bg-gray-100">DC Center</a></li>
+        
+          </ul>
+        </li>
         <li><a href="#" class="block py-1 hover:text-psRed">Stories</a></li>
         <li><a href="#" class="block py-1 hover:text-psRed">Careers</a></li>
         <li><a href="#" class="block py-1 hover:text-psRed">Contact</a></li>
@@ -103,7 +123,7 @@
     <section class="bg-white ">
       <div class="max-w-6xl mx-auto px-4 md:px-6 py-10 md:py-16 flex flex-col md:flex-row gap-10">
         <!-- Left: text -->
-        <div class="md:w-1/2">
+        <div class="md:w-1/2 z-50">
           <p class="text-[11px] font-semibold tracking-[0.2em] text-gray-500 uppercase">
             PeopleShores Apprenticeship Program
           </p>
@@ -121,10 +141,34 @@
 
         <!-- Right: image placeholder -->
         <div class="md:w-1/2">
-          <div class="h-56 sm:h-64 md:h-80 w-full bg-gray-200 border border-gray-300 flex items-center justify-center text-gray-500 text-sm">
+          <!-- <div class="h-56 sm:h-64 md:h-80 w-full bg-gray-200 border border-gray-300 flex items-center justify-center text-gray-500 text-sm">
             <img class=" rounded-xl" src="./imgs/DC/PeopleShoresTeam.webp" alt="PeopleShores Team">
-          </div>
-        </div>
+          </div> -->
+
+
+
+          <div class="slideshow-container relative bottom-5 md:bottom-0">
+
+            <div class="mySlides fade ">
+              <img class="rounded-lg " src="./imgs/DC/PeopleShoresTeam.webp" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img class="rounded-lg" src="./imgs/DC/PeopleShoresClass-2.webp" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img class="rounded-lg" src="./imgs/DC/PeopleShoresLogo.webp" style="width:100%">
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>        </div>
       </div>
     </section>
 
@@ -133,7 +177,7 @@
 
   
     <section class="bg-sectionOne border-y border-gray-200 overflow-hidden">
-      <div class="max-w-6xl mx-auto px-4 md:px-6 py-8">
+      <div class="max-w-6xl mx-auto px-4 md:px-6 py-5">
         <h2 class="text-center text-lg md:text-lg font-semibold tracking-wide uppercase text-textWhite">
           Tech Offerings
         </h2>
@@ -173,7 +217,7 @@
     
 
     <!-- OVERVIEW -->
-    <section class="bg-white pt-40">
+    <section class="bg-white sm:pt-40 ">
       <div class="max-w-4xl mx-auto px-4 md:px-6 py-10">
         <h2 class="text-xl font-semibold text-psRed">Overview</h2>
         <p class="mt-3 text-sm md:text-base text-gray-700 leading-relaxed">
@@ -318,7 +362,7 @@
         </p>
         <button
           class="inline-flex items-center justify-center rounded-sm bg-white px-5 py-2 text-xs md:text-sm font-semibold text-psRed hover:bg-gray-100">
-          GET YOUR FREE QUOTE TODAY!
+         <a href="https://peopleshores.com/our-impact/"> GET YOUR FREE QUOTE TODAY!</a>
         </button>
       </div>
     </section>
@@ -343,10 +387,10 @@
 
         <!-- Social Icons -->
         <div class="flex gap-4 text-2xl pt-3">
-          <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-youtube"></i></a>
-          <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-square-facebook"></i></a>
-          <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.youtube.com/watch?v=PDYg7O112gw" class="text-gray-400 hover:text-white"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/company/peopleshores/" class="text-gray-400 hover:text-white"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/peopleshores/" class="text-gray-400 hover:text-white"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.facebook.com/peopleshores/" class="text-gray-400 hover:text-white"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
       </div>
 
@@ -375,7 +419,7 @@
             
             <li class="relative group">
               <!-- Main Link -->
-              <a href="#" class="hover:text-white flex items-center gap-1">
+              <a href="https://peopleshores.com/locations/" class="hover:text-white flex items-center gap-1">
                 Our Locations
                 <i class="fa-regular fa-angle-down"></i>
               </a>
@@ -435,5 +479,6 @@
 </footer>
 
 <script src="./mobileMenu.js"></script>
+<script src="./slideshow.js"></script>
 </body>
 </html>
