@@ -1,19 +1,37 @@
 let slideIndex = 0;
-showSlides();
 
 function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
+  const slides = document.querySelectorAll(".mySlides");
+  const dots = document.querySelectorAll(".dot");
+
+  // safety: if no slides found, stop
+  if (slides.length === 0) return;
+
+  // hide all slides
+  slides.forEach(slide => {
+    slide.style.display = "none";
+  });
+
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+
+  // show the current slide
+  slides[slideIndex - 1].style.display = "block";
+
+  // update dots ONLY if they exist
+  if (dots.length > 0) {
+    dots.forEach(dot => dot.classList.remove("active"));
+    if (dots[slideIndex - 1]) {
+      dots[slideIndex - 1].classList.add("active");
+    }
+  }
+
+  // loop every 3 seconds ( smoother timing )
+  setTimeout(showSlides, 3000);
 }
+
+// start slideshow once page loads
+document.addEventListener("DOMContentLoaded", showSlides);

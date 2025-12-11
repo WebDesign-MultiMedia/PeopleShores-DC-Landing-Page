@@ -23,6 +23,7 @@
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
+  
   <!-- HEADER / NAV -->
   <header class="border-b border-gray-200 bg-white">
     <div class="flex items-center justify-between px-4 md:px-6 h-16">
@@ -126,89 +127,84 @@
   </header>
 
   <main>
-    <!-- HERO -->
-    <section class="bg-white">
-      <div class="max-w-6xl mx-auto px-4 md:px-6 py-10 md:py-16 flex flex-col md:flex-row gap-10">
-        <!-- Left: text -->
-        <div class="md:w-1/2 z-40">
-          <p class="text-[11px] font-semibold tracking-[0.2em] text-gray-500 uppercase">
-            PeopleShores Apprenticeship Program
-          </p>
-          <h1 class="mt-3 text-3xl md:text-4xl font-bold leading-tight text-gray-900">
-            PeopleShores Apprenticeship Program
-          </h1>
-          <p class="mt-4 text-sm md:text-base text-gray-700 max-w-md">
-            Empowering apprentices with industry-aligned training and real-world consulting.
-          </p>
-
-          <!-- Bigger, descriptive CTA (fixes SEO + touch target) -->
-          <a
-            href="https://peopleshores.com/what-we-do/"
-            aria-label="Learn more about PeopleShores services and what we do"
-            class="mt-6 inline-flex items-center justify-center rounded-sm bg-psRed px-6 py-3 text-sm font-semibold text-white hover:bg-psRedDark">
-            Learn more about our services
+   <!-- HERO -->
+  <section class="relative pt-3 pb-16 md:pt-20 bg-psRed md:bg-transparent">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-4 md:px-6">
+      <!-- Text side -->
+      <div>
+        <p class="text-sm font-semibold tracking-wide md:text-blue-700 text-white  uppercase">
+          PeopleShores Delivery Center · Washington, DC
+        </p>
+        <h1 class="mt-3 text-3xl md:text-4xl font-bold leading-tight md:text-gray-900 text-psGray text-center">
+          Apprenticeship that builds careers and scalable delivery centers.
+        </h1>
+        <p class="mt-4 text-sm md:text-base text-white max-w-xl md:text-gray-700">
+          The PeopleShores DC Delivery Center combines paid training with real client work,
+          preparing apprentices to become consultants while giving partners a proven, scalable model.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="https://peopleshores.com/what-we-do/"
+             class="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold text-psRed bg-psGray md:text-white md:bg-psRed hover:bg-blue-800">
+            Learn More
           </a>
-        </div>
-
-        <!-- Right: slideshow -->
-        <div class="md:w-1/2">
-          <div class="slideshow-container relative bottom-5 md:bottom-0">
-            <div class="mySlides fade">
-              <div class="aspect-[4/3] w-full rounded-lg overflow-hidden">
-                <img
-                  src="./imgs/DC/PeopleShoresTeam.webp"
-                  alt="PeopleShores team at the DC Center"
-                  width="800"
-                  height="600"
-                  class="w-full h-full object-cover">
-              </div>
-            </div>
-
-            <div class="mySlides fade">
-              <div class="aspect-[4/3] w-full rounded-lg overflow-hidden">
-                <img
-                  src="./imgs/DC/PeopleShoresClass-2.webp"
-                  alt="PeopleShores apprentices in a classroom"
-                  width="800"
-                  height="600"
-                  class="w-full h-full object-cover">
-              </div>
-            </div>
-
-            <div class="mySlides fade">
-              <div class="aspect-[4/3] w-full rounded-lg overflow-hidden">
-                <img
-                  src="./imgs/DC/PeopleShoresLogo.webp"
-                  alt="PeopleShores DC Center logo wall"
-                  width="800"
-                  height="600"
-                  class="w-full h-full object-cover">
-              </div>
-            </div>
-          </div>
-
-          <br>
-
-          <div class="text-center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
+          <!-- <a href="#apprenticeship"
+             class="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold text-blue-700 border border-blue-100 hover:bg-blue-50">
+            Explore the apprenticeship
+          </a> -->
         </div>
       </div>
-    </section>
+
+      <!-- Image / slideshow side -->
+      <div class="h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden relative">
+        <div class="slideshow-container h-full">
+          <div class="mySlides fade h-full">
+            <img
+              src="./imgs/DC/PeopleShoresTeam.webp"
+              alt="PeopleShores DC team"
+              width="480"
+              height="360"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <div class="mySlides fade h-full">
+            <img
+              src="./imgs/DC/PeopleShoresClass.webp"
+              alt="PeopleShores DC apprenticeship cohort"
+              width="480"
+              height="360"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <div class="mySlides fade h-full">
+            <img
+              src="./imgs/DC/PeopleShoresLogo.webp"
+              alt="PeopleShores logo in the DC center"
+              width="480"
+              height="360"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- Optional tinted overlay -->
+        <div class="pointer-events-none absolute inset-0 bg-black/20"></div>
+      </div>
+    </div>
+  </section>
 
     <!-- TECH OFFERINGS -->
-    <section class="bg-sectionOne border-y border-gray-200 overflow-hidden py-10">
+    <section class="bg-sectionOne border-y border-gray-200 overflow-hidden py-20 mt-10">
       <div class="max-w-6xl mx-auto px-4 md:px-6 py-5">
-        <h2 class="text-center text-lg md:text-lg font-semibold tracking-wide uppercase text-textWhite">
+        <h2 class="text-center text-lg md:text-2xl font-semibold tracking-wide uppercase text-textWhite">
           Tech Offerings
         </h2>
 
         <!-- OUTER WRAPPER PREVENTS HORIZONTAL SCROLL -->
-        <div class="pt-10 pb-5 overflow-hidden">
+        <div class="pt-20 pb-5 overflow-hidden font-mono text-lg">
           <!-- SCROLLING STRIP -->
-          <div class="text-textWhite flex gap-20 animate-[infinite-scroll_80s_linear_infinite] whitespace-nowrap">
+          <div class="text-textWhite flex gap-20 animate-[infinite-scroll_10s_linear_infinite] whitespace-nowrap">
             <!-- SET 1 -->
             <div class="flex gap-20 shrink-0">
               <div class="card">ServiceNow</div>
@@ -236,7 +232,7 @@
     </section>
 
     <!-- OVERVIEW -->
-    <section class="bg-white sm:pt-40">
+    <section class="bg-white ">
       <div class="max-w-4xl mx-auto px-4 md:px-6 py-10">
         <h2 class="text-xl font-semibold text-psRed">Overview</h2>
         <p class="mt-3 text-sm md:text-base text-gray-700 leading-relaxed">
